@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Horaios y Funciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <form [formGroup]="formTrabajador">
+  <ion-list>
+    <ion-label position="stacked">Nombre del Trabajador:</ion-label>
+    <ion-input type="text" formControlName="nombre"></ion-input>
+  </ion-list>
+
+  <ion-list>
+    <ion-label position="stacked">Asignar Función:</ion-label>
+    <ion-input type="text" formControlName="trabajo"></ion-input>
+  </ion-list>
+
+  <ion-list>
+    <ion-label position="stacked">Asiganar Turno y Horario:</ion-label>
+    <ion-input type="text" formControlName="horario"></ion-input>
+  </ion-list>
+
+  <ion-row>
+
+    <ion-col>
+      <ion-button type="submit" expand="block">Añadir Trabajador</ion-button>
+    </ion-col>
+
+  </ion-row>
+
+ </form>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Stock</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <form [formGroup]="formStock">
+    <ion-list>
+      <ion-label position="stacked">Producto:</ion-label>
+      <ion-input type="text" formControlName="producto"></ion-input>
+    </ion-list>
+
+    <ion-list>
+      <ion-label position="stacked">Unidades:</ion-label>
+      <ion-input type="text" formControlName="unidades"></ion-input>
+    </ion-list>
+
+    <ion-list>
+      <ion-label position="stacked">Precio Unitario:</ion-label>
+      <ion-input type="text" formControlName="preciounds"></ion-input>
+    </ion-list>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-button type="submit" expand="block">Añadir Producto</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+ </form>
+</ion-content>

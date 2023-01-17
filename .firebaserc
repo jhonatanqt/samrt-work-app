@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "smart-work-app-313f0": {
+      "hosting": {
+        "app": [
+          "smart-work-app-313f0"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "smart-work-app-313f0"
+  }
+}
